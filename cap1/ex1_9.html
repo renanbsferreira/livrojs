@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+// Cálculo do valor do jantar 
+
+//entrada de dados
+var valorJantar = Number(prompt("Qual foi o valor do jantar?"));
+
+//processamento
+//	Taxa do garçom:
+const porcenGARCOM = 10;
+var taxaGarcom = valorJantar * porcenGARCOM / 100;
+/*	Outro jeito:
+var taxaGarcom = valorJantar * 0.10;
+*/
+// Total do jantar:
+var total = valorJantar + taxaGarcom;
+
+//saída de dados
+alert("Taxa do garçom: R$" + taxaGarcom.toFixed(2) + 
+"\nTotal do jantar: R$" + total.toFixed(2));
+</script>
